@@ -1,0 +1,18 @@
+# fly.toml file generated for fly-gotftp-69 on 2022-05-13T18:19:35+02:00
+
+app = "fly-gotftp-69"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
+[[services]]
+  internal_port = 69
+  protocol = "udp"
+
+  [[services.ports]]
+    port = 69
