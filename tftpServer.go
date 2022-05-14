@@ -16,16 +16,16 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"path"
 	"path/filepath"
 	"time"
 
 	// single-port mode option requires v2.2.0+
 	// $ go get github.com/pin/tftp@2.2.0		// fails to get v2.2.0
 	// $ go get github.com/pin/tftp@master		// work around until fixed upstream
+	// see https://github.com/pin/tftp/pull/67
 	"github.com/pin/tftp"
-	//"github.com/pin/tftp@2.2.0"
-	//"github.com/pin/tftp/v2"
+	//"github.com/pin/tftp@2.2.0"				// fails
+	//"github.com/pin/tftp/v2"					// once PR#67 is committed upstream
 )
 
 var allowedSuffixes = []string{".md", ".mod", ".kpxe", ".txt"}
@@ -48,8 +48,8 @@ func readHandler(filenameRRQ string, rf io.ReaderFrom) error {
 	raddr := rf.(tftp.OutgoingTransfer).RemoteAddr()
 	laddr := rf.(tftp.RequestPacketInfo).LocalIP()
 
-	//filename := filepath.Clean(path.Join("/app/tftp", filepath.Base(filenameRRQ)))
-	filename := path.Join("/app/tftp", filepath.Base(filenameRRQ))
+	// chop off path & enforce it for file to read & served
+	filename := filepath.Join("/app/tftp", filepath.Base(filepath.Clean(filenameRRQ)))
 
 	fmt.Printf("RRQ %s > %s from %s  to %s \n", filenameRRQ, filename, raddr.String(), laddr.String())
 
