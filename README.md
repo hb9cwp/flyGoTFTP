@@ -28,16 +28,22 @@ Although this works in principle (`appuser` can start `tftpServer` which will li
 
 ### References
 [1] [Serve Small With Fly.io and GoStatic](https://fly.io/blog/serve-small-with-fly-io-and-gostatic/)
+
 [2] [Going tiny - A 7.7MB server image](https://community.fly.io/t/going-tiny-a-7-7mb-server-image/33)
+
 [3] [Create a static website with Fly](https://github.com/fly-apps/hello-static)
+
 [4] [goStatic: A really small static web server for Docker](https://github.com/firstderm/goStatic)
-[5] [](https://hub.docker.com/r/pierrezemb/gostatic) Note that "Usage" is somewhat outdated, requires a PR for ex. to replace deprecated `-enable-logging` by `-log-level=debug`. 
+
+[5] [A really small static web server for Docker](https://hub.docker.com/r/pierrezemb/gostatic)
+Note that "Usage" is somewhat outdated, requires a PR for ex. to replace deprecated `-enable-logging` by `-log-level=debug`. 
+
 [6] [Running Fly.io Apps On UDP and TCP](https://fly.io/docs/app-guides/udp-and-tcp/)
 
 
 ### Screenshots
 
-![$ fly deploy](fly_deploy.png)
+![$ fly deploy](screenshots/fly_deploy.png)
 
 ![Log ](fly_logs.png)
 
