@@ -23,7 +23,7 @@ Although this works in principle (`appuser` can start `tftpServer` which will li
 - Improve the transfer performance of files, which appears to be degraded by the single-port mode, for example by increasing the TFTP block size on the client side from default 512 to 4096 or 8192 Byte.
 
 - Test TFTP over IPv6, once Fly supports UDP also on IPv6.
-- Add `.tf` files to configure/update DNS records to custom domains that point to the Anycast IP addresses of the FTFP server(s), once a Terraform Provider becomes available for Fly.io.
+- Add `.tf` files to configure/update DNS records to custom domains that point to the Anycast IP addresses of the FTFP server(s), once a Terraform Provider for Fly.io becomes available.
 
 
 ### References
