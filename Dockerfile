@@ -4,6 +4,7 @@
 # Note: this Dockerfile of goStatic really produces minimal Distroless Container images with very small size:
 #  https://github.com/PierreZ/goStatic/blob/master/Dockerfile
 
+FROM scratch
 MAINTAINER hb9cwp
 
 # stage 0
