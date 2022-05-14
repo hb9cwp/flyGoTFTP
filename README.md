@@ -46,13 +46,13 @@ Note that "Usage" is somewhat outdated, requires a PR for ex. to replace depreca
 ### Screenshots
 
 Deploy on Fly.io by `fly deploy`S:
-![fly deploy](screenshots/fly_deploy.png)
+![fly_deploy](screenshots/fly_deploy.png)
 
 Memory used by microVM in Firecryker:
-![memVM](screenshots/fly_memoryMicroVM.png)
+![memVM](screenshots/fly_memoryMicroVM.png =550x360)
 
 TFTP client session:
-![TFTP client session;](screenshots/tftp_client.png)
+![TFTP_client](screenshots/tftp_client.png =600x380)
 
 Log outout on WebUI of Fly.io:
-![Logs](screenshots/fly_logs.png)
+![fly_logs](screenshots/fly_logs.png)
