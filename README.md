@@ -50,12 +50,12 @@ Deploy on Fly.io by `fly deploy`:
 
 Memory used by microVM in Firecracker:
 <div style="width:550px ; height:360px">
-![memVM](screenshots/fly_memoryMicroVM.png "Title: Mem")
+![memVM](screenshots/fly_memoryMicroVM.png)
 </div>
 
 TFTP client session:
 <div style="width:600px ; height:380px">
-![TFTP_client](screenshots/tftp_client.png =600x380)
+![TFTP_client](screenshots/tftp_client.png)
 </div>
 
 Log outout on WebUI of Fly.io:
