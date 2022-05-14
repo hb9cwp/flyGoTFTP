@@ -38,17 +38,21 @@ Although this works in principle (`appuser` can start `tftpServer` which will li
 [5] [A really small static web server for Docker](https://hub.docker.com/r/pierrezemb/gostatic)
 Note that "Usage" is somewhat outdated, requires a PR for ex. to replace deprecated `-enable-logging` by `-log-level=debug`. 
 
-[6] [Running Fly.io Apps On UDP and TCP](https://fly.io/docs/app-guides/udp-and-tcp/)
+[6] [TFTP server and client library for Golang](https://github.com/pin/tftp)
+
+[7] [Running Fly.io Apps On UDP and TCP](https://fly.io/docs/app-guides/udp-and-tcp/)
 
 
 ### Screenshots
 
-![$ fly deploy](screenshots/fly_deploy.png)
+Deploy on Fly.io by `fly deploy`S:
+![fly deploy](screenshots/fly_deploy.png)
 
-![Log ](fly_logs.png)
+Memory used by microVM in Firecryker:
+![memVM](screenshots/fly_memoryMicroVM.png)
 
-![Memory used by microVM in Firecryker:](fly_memoryMicroVM.png)
+TFTP client session:
+![TFTP client session;](screenshots/tftp_client.png)
 
-![TFTP client session;](tftp_client.png)
-
-
+Log outout on WebUI of Fly.io:
+![Logs](screenshots/fly_logs.png)
