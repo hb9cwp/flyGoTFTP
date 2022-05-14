@@ -8,7 +8,7 @@ FROM scratch
 MAINTAINER hb9cwp
 
 # stage 0
-FROM --platform=$BUILDPLATFORM golang:latest as builder
+FROM --platform=$BUILDPLATFORM golang:latest AS builder
 
 ARG TARGETPLATFORM
 
