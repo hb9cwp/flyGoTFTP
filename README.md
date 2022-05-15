@@ -50,14 +50,18 @@ Note that "Usage" is somewhat outdated, requires a PR for ex. to replace depreca
 
 [7] [Running Fly.io Apps On UDP and TCP](https://fly.io/docs/app-guides/udp-and-tcp/)
 
-- - - -
+- - - - 
 
 ### Screenshots
 
-![fly_deploy](https://github.com/hb9cwp/flyGoTFTP/blob/main/screenshots/fly_deploy.png "Deploy on Fly.io by `fly deploy`:")
+Deploy on Fly.io by `fly deploy`:
+![fly_deploy](screenshots/fly_deploy.png)
 
-![memVM](https://github.com/hb9cwp/flyGoTFTP/blob/main/screenshots/fly_memoryMicroVM.png/550x360 "Memory used by microVM in Firecracker:")
+Memory used by microVM in Firecracker:
+![memVM](screenshots/fly_memoryMicroVM.png)
 
-![TFTP_client](https://github.com/hb9cwp/flyGoTFTP/blob/main/screenshots/tftp_client.png/600x380 "TFTP client session:")
+TFTP client session:
+![TFTP_client](screenshots/tftp_client.png)
 
-![fly_logs](https://github.com/hb9cwp/flyGoTFTP/blob/main/screenshots/fly_logs.png "Log outout on WebUI of Fly.io:")
+Log outout on WebUI of Fly.io:
+![fly_logs](screenshots/fly_logs.png)
