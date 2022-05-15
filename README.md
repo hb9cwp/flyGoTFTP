@@ -22,12 +22,11 @@ This is different to the static Web server example `goStatic` because HTTP/1.x &
 Although this works in principle (`appuser` can start `tftpServer` which will listen on port 6969/udp), replies from the TFTP server do not make it back to the TFTP clients.
 
 - Improve the transfer performance of files, which appears to be degraded by the single-port mode, for example by increasing the TFTP block size on the client side from default 512 to 4096 or 8192 Byte.
-.
-After increasing the blockSize on server-side from its default 512 to 8192, doubling the blockSize negotiated by the client from 512 to 1024 Byte approx. doubles the throughput, e.g. halves the time for file transfers.
-Note however that on the server-side, this is an upper bound only that is clamped by what the client negotiates and the MTU (minus some overhead) defined by the server in single-port mode. On Fly.io, clients can request blockSize up to 1372.
-Test on Linux:   $ atftp --verbose --option "blksize 8192" --trace  4.3.2.1
-Test on OpenBSD: $ tftp  4.3.2.1, then  > verbose trace status ascii/bin blksize get... 
-Note also that clients can only increase blksize, but not decrease it without disconnecting first!
+    - After increasing the blockSize on server-side from its default 512 to 8192, doubling the blockSize negotiated by the client from 512 to 1024 Byte approx. doubles the throughput, e.g. halves the time for file transfers.
+    - Note however that on the server-side, this is an upper bound only that is clamped by what the client negotiates and the MTU (minus some overhead) defined by the server in single-port mode. On Fly.io, clients can request blockSize up to 1372.
+    - Test on Linux:   $ atftp --verbose --option "blksize 8192" --trace  4.3.2.1
+    Test on OpenBSD: $ tftp  4.3.2.1, then  > verbose trace status ascii/bin blksize get... 
+    - Note also that clients can only increase blksize, but not decrease it without disconnecting first!
 
 - Test TFTP over IPv6, once Fly supports UDP also on IPv6.
 
