@@ -77,7 +77,8 @@ func main() {
 	// use nil in place of handler to disable read or write operations
 	//s := tftp.NewServer(readHandler, writeHandler)
 	s := tftp.NewServer(readHandler, nil) // read-only server
-	s.SetTimeout(5 * time.Second)         // optional
+	//s.SetTimeout(5 * time.Second)      // default 5 s, retransmission timeout, optional
+	s.SetTimeout(500 * time.Millisecond) // default 5 s, more aggressive retransmission timeout => check RTT!
 	// enable single-port mode (experimental)
 	//  https://github.com/pin/tftp/blob/0161c5dd2e967493da88cfdf9426b9337afb60ee/server.go#L112
 	s.EnableSinglePort()
