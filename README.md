@@ -54,10 +54,10 @@ Note that "Usage" is somewhat outdated, requires a PR for ex. to replace depreca
 
 ### Screenshots
 
-![fly_deploy](screenshots/fly_deploy.png "Deploy on Fly.io by `fly deploy`:")
+![fly_deploy](https://github.com/hb9cwp/flyGoTFTP/blob/main/screenshots/fly_deploy.png "Deploy on Fly.io by `fly deploy`:")
 
-![memVM](screenshots/fly_memoryMicroVM.png/550x360 "Memory used by microVM in Firecracker:")
+![memVM](https://github.com/hb9cwp/flyGoTFTP/blob/main/screenshots/fly_memoryMicroVM.png/550x360 "Memory used by microVM in Firecracker:")
 
-![TFTP_client](screenshots/tftp_client.png/600x380 "TFTP client session:")
+![TFTP_client](https://github.com/hb9cwp/flyGoTFTP/blob/main/screenshots/tftp_client.png/600x380 "TFTP client session:")
 
-![fly_logs](screenshots/fly_logs.png "Log outout on WebUI of Fly.io:")
+![fly_logs](https://github.com/hb9cwp/flyGoTFTP/blob/main/screenshots/fly_logs.png "Log outout on WebUI of Fly.io:")
