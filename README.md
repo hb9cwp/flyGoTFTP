@@ -32,6 +32,7 @@ Although this works in principle (`appuser` can start `tftpServer` which will li
 
 - Add `.tf` files to configure/update DNS records to custom domains that point to the Anycast IP addresses of the FTFP server(s), once a Terraform Provider for Fly.io becomes available.
 
+- - - -
 
 ### References
 [1] [Serve Small With Fly.io and GoStatic](https://fly.io/blog/serve-small-with-fly-io-and-gostatic/)
@@ -49,17 +50,14 @@ Note that "Usage" is somewhat outdated, requires a PR for ex. to replace depreca
 
 [7] [Running Fly.io Apps On UDP and TCP](https://fly.io/docs/app-guides/udp-and-tcp/)
 
+- - - -
 
 ### Screenshots
 
-Deploy on Fly.io by `fly deploy`:
-![fly_deploy](screenshots/fly_deploy.png)
+![fly_deploy](screenshots/fly_deploy.png "Deploy on Fly.io by `fly deploy`:")
 
-Memory used by microVM in Firecracker:
-![memVM](screenshots/fly_memoryMicroVM.png)
+![memVM](screenshots/fly_memoryMicroVM.png/550x360 "Memory used by microVM in Firecracker:")
 
-TFTP client session:
-![TFTP_client](screenshots/tftp_client.png)
+![TFTP_client](screenshots/tftp_client.png/600x380 "TFTP client session:")
 
-Log outout on WebUI of Fly.io:
-![fly_logs](screenshots/fly_logs.png)
+![fly_logs](screenshots/fly_logs.png "Log outout on WebUI of Fly.io:")
