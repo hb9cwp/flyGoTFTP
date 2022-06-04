@@ -30,7 +30,8 @@ Although this works in principle (`appuser` can start `tftpServer` which will li
 
 - Test TFTP over IPv6, once Fly supports UDP also on IPv6.
 
-- Add `.tf` files to configure/update DNS records to custom domains that point to the Anycast IP addresses of the FTFP server(s), once a Terraform Provider for Fly.io becomes available.
+-[x] Add sample `readData.tf` to read Data Sources from Fly
+-[ ] Add `.tf` files to configure/update DNS records to custom domains that point to the Anycast IP addresses of the FTFP server(s), once a Terraform Provider for Fly.io becomes available.
 
 - - - -
 
